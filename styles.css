@@ -451,6 +451,29 @@ p { margin: 0; }
 
 .legal-contact strong { display: block; color: var(--ink); }
 
+.legal-body p a,
+.legal-body li a,
+.legal-contact a {
+  color: var(--navy-700);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s var(--ease);
+}
+
+.legal-body p a:hover,
+.legal-body p a:focus-visible,
+.legal-body li a:hover,
+.legal-body li a:focus-visible,
+.legal-contact a:hover,
+.legal-contact a:focus-visible {
+  color: var(--blue-400);
+}
+
+.legal-contact__email {
+  margin-top: 12px;
+  color: var(--ink);
+}
+
 .back-home { margin-top: 56px; }
 
 /* ---------- Reveal animation ---------- */
